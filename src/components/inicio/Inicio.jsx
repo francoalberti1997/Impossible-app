@@ -1,7 +1,7 @@
 import React from 'react'
 // import logo_square from "../inicio/1mPossible.jpg"
 import logo_square from "../inicio/logo_nuevo_fondo.jpg"
-import portada from '../inicio/portada.jpg'
+import portada from '../inicio/portada1.jpg'
 
 const Inicio = ({toggleLanguage, clickLanguage}) => {
   return (
@@ -10,7 +10,7 @@ const Inicio = ({toggleLanguage, clickLanguage}) => {
             <div className="inicio-wrapper-image">
                 <img src={portada} alt="" />
             </div>
-            <div className="inicio-text">
+            {/* <div className="inicio-text">
             
                 <div className="inicio-text-image">
                     <img src={logo_square} alt="" />
@@ -22,10 +22,10 @@ const Inicio = ({toggleLanguage, clickLanguage}) => {
                     
                     </h2>
                 </div>
-            </div>
+            </div> */}
             <div className="inicio-text-title mobile-text">
             <h2>
-            {clickLanguage ? `Explorando la Inmortalidad: Ciencia Vanguardista en 1mPossible.` : `Exploring Immortality: Cutting-Edge Science at 1mPossible`}        
+                Explorando la Inmortalidad: Ciencia Vanguardista en 1mPossible.     
             </h2>
             </div>
 

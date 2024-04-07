@@ -3,16 +3,14 @@ import Navbar from "./components/navbar/Navbar";
 import Inicio from "./components/inicio/Inicio";
 import Servicios from "./components/Servicios/Servicios";
 import Wsp from "./components/wsp/Wsp";
-import franco from "../src/components/Colaboradores/franco.jpeg"
 
 
-import daniela from "../src/components/team/Daniela.jpeg"
-import felipe from "../src/components/team/Felipe.png"
-import samanta from "../src/components/Colaboradores/Samanta.jpeg"
-import seba from "../src/components/team/Seba.jpg"
-import dani from "../src/components/Colaboradores/Daniel.png"
 
-import nahuel from "../src/components/team/Nahuel.png"
+
+import delfina from "../src/components/Colaboradores/delfina.jpg"
+import rodolfo from "../src/components/Colaboradores/rodolfo.jpg"
+
+
 
 import logo_blanco from "../src/components/inicio/logo_nuevo.jpg"
 import logo_verde from "../src/components/inicio/logo_nuevo_fondo_verde.jpg"
@@ -45,7 +43,7 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
     <Navbar toggleLanguage={toggleLanguage} clickLanguage={clickLanguage} />
     <Wsp clickLanguage={clickLanguage}/>
     <Inicio toggleLanguage={toggleLanguage} clickLanguage={clickLanguage}/>
-    <Servicios
+    {/* <Servicios
       clickLanguage={clickLanguage}
       section={"Servicios"}
       section_eng={'Services'}  
@@ -63,8 +61,8 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
             "https://www.thoughtco.com/thmb/gpXe4f-4MQeNFrH4CMuWPya2aTw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egg-storage-for-ivf-478187231-59491b7c3df78c537bc0b778.jpg",
         },
       ]}
-    />
-    <Servicios
+    /> */}
+    {/* <Servicios
       clickLanguage={clickLanguage}
       section={"Investigación"}
       section_eng={'Research'}
@@ -100,16 +98,27 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
             "https://wallpaperaccess.com/full/2351892.jpg",
         },
       ]}
-    />
+    /> */}
     <Team
           clickLanguage={clickLanguage}
-          staff={"CEO"}
+          staff={"Colaboradores"}
           staff_eng={"CEO"}
           rol={"Team"}
           icons={"fa-solid fa-user-tie"}
         componentes={[
           {
-            usuario: seba,
+            usuario: rodolfo,
+            rol: "CEO",
+            "role": "CEO",
+            nombre: "Sebastián Cippitelli",
+            profesion: "Director General de 1mPossible",
+            job:"Managing Director of 1mPossible",
+            texto_eng:"Sebastián Cippitelli, Managing Director of 1mPossible, is a visionary dedicated to pushing the boundaries in science and biomedicine, with the bold mission of overcoming mortality.",
+            texto: "Sebastián Cippitelli, Director de 1mPossible, es un visionario dedicado a superar límites en ciencia y biomedicina, con la audaz misión de vencer la mortalidad."
+          },
+
+          {
+            usuario: delfina,
             rol: "CEO",
             "role": "CEO",
             nombre: "Sebastián Cippitelli",
@@ -121,79 +130,7 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
           // Puedes agregar más objetos con datos aquí según sea necesario
         ]}
       />
-      <Team
-        clickLanguage={clickLanguage}
-        staff={"Nuestros Científicos"}
-        staff_eng={"Our Scientists"}
-        icons={"fa-solid fa-graduation-cap"}
-
-        componentes={[
-          {
-            "usuario": daniela,
-            "rol": "Científico",
-            "role": "Scientist",
-            "nombre": "Daniela López De Luise",
-            "profesion": "Doctora en Ciencias Informáticas",
-            "job":"Ph.D. in Computer Science",
-            "texto_eng":"With a Ph.D. in Computer Science, she leads the CI2S LAB in artificial intelligence. Her current project at the Historical Museum Sarmiento aims to promote STEAM education.",
-            "texto": "Doctora en Ciencias Informáticas, lidera el CI2S LAB en inteligencia artificial. Su proyecto actual en el Museo Histórico Sarmiento busca fomentar la enseñanza STEAM."
-          },
-          {
-            "usuario": nahuel,
-            "rol": "Científico",
-            "role": "Scientist",
-
-            "nombre": "Nahuel Turco",
-            "profesion": "Estudiante de Biología Molecular",
-            "job":"Molecular Biology Student",
-            "texto": "Un estudiante destacado en biología molecular, Nahuel Turco, tiene el promedio más alto en su campo de estudio y se encuentra en una etapa avanzada de su trayectoria académica.",
-            "texto_eng": `
-            An outstanding student in molecular biology, Nahuel Turco holds the highest GPA in his field of study and is in an advanced stage of his academic journey.
-            `
-          },
-          {
-            "usuario": samanta,
-            "rol": "Científico",
-            "role": "Scientist",
-
-            "nombre": "Samanta Adriana Reyes Molina",
-            "profesion": "Doctora en Ciencias Edafología",
-            "job":"Ph.D. in Soil Science",
-            "texto": "Doctora en Ciencias Edafología y Licenciada en Biología, especializada en ecología y fisiología vegetal. Líder ambiental comprometida con proyectos sostenibles.",
-            "texto_eng":"A Ph.D. in Soil Science and a Licensed Biologist, specializing in ecology and plant physiology. A dedicated environmental leader involved in sustainable projects.",
-        },          // Puedes agregar más objetos con datos aquí según sea necesario
-        ]}
-      />
-
-<Team
-        clickLanguage={clickLanguage}
-        staff={"Nuestros Técnicos"}
-        staff_eng={"Our Technicians"}
-        icons={"fa-solid fa-wrench"}
-        componentes={[
-          {
-            "usuario": franco,
-            "rol": "Colaborador",
-            "role":"Collaborator",
-            "nombre": "Franco Alberti",
-            "profesion": "Digital Business Developer",
-            "job":"Digital Business Developer",
-            "texto_eng":"Full Stack Developer and Entrepreneur specializing in digital business with extensive experience in creating digital platforms and online marketing strategies.",
-            "texto": "Desarrollador Full Stack y Emprendedor especializado en negocios digitales con amplia experiencia en la creación de plataformas digitales y estrategias de marketing online."
-          },
-          {
-            "usuario": dani,
-            "rol": "Colaborador",
-            "role":"Collaborator",
-            "nombre": "Daniel Lavagna",
-            "profesion": "Diseñador Gráfico",
-            "job":"Graphic Designer",
-            "texto_eng":"Daniel Lavagna is a talented Graphic Designer, photographer, and video editor. Also, a teacher at a professional training center.",
-            "texto": "Daniel Lavagna es un talentoso Diseñador Gráfico, fotógrafo y editor de videos. Además, docente en un centro de formación profesional."
-          }
-          
-        ]}
-      />
+      
     {/* <Mision/> */}
     <Servicios
       clickLanguage={clickLanguage}
@@ -561,148 +498,148 @@ function App() {
     }
   ]
 
-  const colaboradorData = [
-    {
-      usuario: daniela,
-      rol: 'Científico',
-      nombre: 'Daniela López De Luise',
-      profesion: 'Doctora en Ciencias Informáticas',
-      job:`Ph.D. in Computer Science`,
-      link:{link_1:'https://r9.ieee.org/argentina-cis/inicio/autoridades/daniela-lopez-de-luise/ '},
-      texto: `
+//   const colaboradorData = [
+//     {
+//       usuario: daniela,
+//       rol: 'Científico',
+//       nombre: 'Daniela López De Luise',
+//       profesion: 'Doctora en Ciencias Informáticas',
+//       job:`Ph.D. in Computer Science`,
+//       link:{link_1:'https://r9.ieee.org/argentina-cis/inicio/autoridades/daniela-lopez-de-luise/ '},
+//       texto: `
   
-      La docente, investigadora y directora del Artificial Intelligence Group (AIGroup) de la Facultad de Ingeniería de la Universidad de Palermo (UP), Daniela López De Luise, fue designada en el 2013 presidente de Institute of Electrical and Electronics Engineers (IEEE Argentina), por votación casi unánime e histórica por la cantidad de votantes.
+//       La docente, investigadora y directora del Artificial Intelligence Group (AIGroup) de la Facultad de Ingeniería de la Universidad de Palermo (UP), Daniela López De Luise, fue designada en el 2013 presidente de Institute of Electrical and Electronics Engineers (IEEE Argentina), por votación casi unánime e histórica por la cantidad de votantes.
 
-Esta asociación profesional es la más grande del mundo y está dedicada al avance tecnológico y la innovación. Cuenta con más de 400 mil miembros en más de 160 países. El nombramiento con el que ha sido distinguida la Dra. López De Luise, quien hace 28 años es miembro del IEEE, es un altísimo honor que muy pocos en la Argentina han recibido, debido a las altas exigencias del Instituto respecto a los candidatos.
+// Esta asociación profesional es la más grande del mundo y está dedicada al avance tecnológico y la innovación. Cuenta con más de 400 mil miembros en más de 160 países. El nombramiento con el que ha sido distinguida la Dra. López De Luise, quien hace 28 años es miembro del IEEE, es un altísimo honor que muy pocos en la Argentina han recibido, debido a las altas exigencias del Instituto respecto a los candidatos.
 
-Daniela es Doctora en Ciencias Informáticas por la Universidad Nacional de La Plata, e Ingeniera en Informática, entre sus otros títulos. Es actualmente la directora del laboratorio de investigaciones «Computational Intelligence And Information Systems Labs (CI2S  LAB), asociación sin fines de lucro, dedicada al apalancamiento de la inteligencia artificial como investigación aplicada.
+// Daniela es Doctora en Ciencias Informáticas por la Universidad Nacional de La Plata, e Ingeniera en Informática, entre sus otros títulos. Es actualmente la directora del laboratorio de investigaciones «Computational Intelligence And Information Systems Labs (CI2S  LAB), asociación sin fines de lucro, dedicada al apalancamiento de la inteligencia artificial como investigación aplicada.
 
-Revista actualmente como Directora de la Especialización de Ensenanza de Ciencias de la Computación, UADER (Entre Ríos), y es profesora de Posgrado en tres instituciones: en la Universidad Austral, en la disciplina de aprendizaje automático, en la Universidad Abierta Interamericana UAI y en la Universidad Señor del Sipán (Perú).
+// Revista actualmente como Directora de la Especialización de Ensenanza de Ciencias de la Computación, UADER (Entre Ríos), y es profesora de Posgrado en tres instituciones: en la Universidad Austral, en la disciplina de aprendizaje automático, en la Universidad Abierta Interamericana UAI y en la Universidad Señor del Sipán (Perú).
 
-Presenta una extensa trayectoria como oradora en diversos eventos nacionales e internacionales, y ha publicado un centenar de trabajos relacionados con la disciplina de IA, creando conceptos como los wavelets morfosintácticos, aportando al estudio de la conciencia de robots y proponiendo nuevos mecanismos de propagación en el campo de los autómatas, como el caso del modelo de conciencia bacteriana.
+// Presenta una extensa trayectoria como oradora en diversos eventos nacionales e internacionales, y ha publicado un centenar de trabajos relacionados con la disciplina de IA, creando conceptos como los wavelets morfosintácticos, aportando al estudio de la conciencia de robots y proponiendo nuevos mecanismos de propagación en el campo de los autómatas, como el caso del modelo de conciencia bacteriana.
 
-Es miembro del programa local de disertantes distinguidos de la IEEE Argentina. Fue Presidente del comité directivo de la IEEE Argentina en el período 2013-2014. Fundó y dirigió el laboratorio de investigaciones AI Group en la Universidad de Palermo. Es fundadora del Capítulo Argentino de la IEEE Computational Intelligence Society, y fue su primera Presidente (2005). También ha creado la red científica PI Network en 2008, dirigiendo la misma hasta 2013. En su paso por el ITBA creó y dirigió el primer laboratorio de Bases de datos del ITBA, Instituto Tecnológico de Buenos Aires, hacia 1998, entre otras actividades.
+// Es miembro del programa local de disertantes distinguidos de la IEEE Argentina. Fue Presidente del comité directivo de la IEEE Argentina en el período 2013-2014. Fundó y dirigió el laboratorio de investigaciones AI Group en la Universidad de Palermo. Es fundadora del Capítulo Argentino de la IEEE Computational Intelligence Society, y fue su primera Presidente (2005). También ha creado la red científica PI Network en 2008, dirigiendo la misma hasta 2013. En su paso por el ITBA creó y dirigió el primer laboratorio de Bases de datos del ITBA, Instituto Tecnológico de Buenos Aires, hacia 1998, entre otras actividades.
 
-En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la IEEE Capitulo Argentina, y sus múltiples proyectos de investigación, desarrollo e innovación en torno a la inteligencia computacional. El último de ellos (2019) es versante sobre una novel arquitectura de islas de investigación, desarrollo e innovación, a radicarse en el Museo Histórico Sarmiento, en sociedad con la SCA (Sociedad Científica Argentina), con miras a lograr un lugar colaborativo para investigadores, empresas, organizaciones intermedias y docentes que deseen colaborar en la problemática de la enseñanza STEAM (ciencia, tecnología, ingeniería, arte y matemáticas).
+// En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la IEEE Capitulo Argentina, y sus múltiples proyectos de investigación, desarrollo e innovación en torno a la inteligencia computacional. El último de ellos (2019) es versante sobre una novel arquitectura de islas de investigación, desarrollo e innovación, a radicarse en el Museo Histórico Sarmiento, en sociedad con la SCA (Sociedad Científica Argentina), con miras a lograr un lugar colaborativo para investigadores, empresas, organizaciones intermedias y docentes que deseen colaborar en la problemática de la enseñanza STEAM (ciencia, tecnología, ingeniería, arte y matemáticas).
 
 
       
-      `,
+//       `,
 
-      texto_eng:`
-      Daniela López De Luise, Ph.D. in Computer Science, is a teacher, researcher, and director of the Artificial Intelligence Group (AIGroup) at the Faculty of Engineering of the University of Palermo (UP). In 2013, she was appointed President of the Institute of Electrical and Electronics Engineers (IEEE Argentina), a position achieved through nearly unanimous and historic voting due to the high number of voters. This professional association, the world's largest, is dedicated to technological advancement and innovation, boasting over 400 thousand members in more than 160 countries.
+//       texto_eng:`
+//       Daniela López De Luise, Ph.D. in Computer Science, is a teacher, researcher, and director of the Artificial Intelligence Group (AIGroup) at the Faculty of Engineering of the University of Palermo (UP). In 2013, she was appointed President of the Institute of Electrical and Electronics Engineers (IEEE Argentina), a position achieved through nearly unanimous and historic voting due to the high number of voters. This professional association, the world's largest, is dedicated to technological advancement and innovation, boasting over 400 thousand members in more than 160 countries.
 
-      The appointment, an extremely high honor bestowed upon Dr. López De Luise, a member of IEEE for 28 years, is rare in Argentina due to the institute's stringent candidate requirements. She holds a Ph.D. in Computer Science from the National University of La Plata and is an Information Technology Engineer, among her other titles. Currently, she directs the Computational Intelligence And Information Systems Labs (CI2S LAB), a non-profit association dedicated to leveraging artificial intelligence as applied research. Dr. López De Luise serves as the Director of the Specialization in Computer Science Teaching at UADER (Entre Ríos) and is a postgraduate professor at three institutions: the Universidad Austral, teaching machine learning; the Universidad Abierta Interamericana (UAI); and the Universidad Señor del Sipán (Peru).
+//       The appointment, an extremely high honor bestowed upon Dr. López De Luise, a member of IEEE for 28 years, is rare in Argentina due to the institute's stringent candidate requirements. She holds a Ph.D. in Computer Science from the National University of La Plata and is an Information Technology Engineer, among her other titles. Currently, she directs the Computational Intelligence And Information Systems Labs (CI2S LAB), a non-profit association dedicated to leveraging artificial intelligence as applied research. Dr. López De Luise serves as the Director of the Specialization in Computer Science Teaching at UADER (Entre Ríos) and is a postgraduate professor at three institutions: the Universidad Austral, teaching machine learning; the Universidad Abierta Interamericana (UAI); and the Universidad Señor del Sipán (Peru).
       
-      She has an extensive history as a speaker at various national and international events, having published about a hundred works related to the field of AI. Dr. López De Luise has introduced concepts like morphosyntactic wavelets, contributed to the study of robot consciousness, and proposed new propagation mechanisms in the field of automata, such as the model of bacterial consciousness. She is a member of the local Distinguished Speakers Program of IEEE Argentina and served as the President of the IEEE Argentina Steering Committee in the 2013-2014 period. She founded and directed the AI Group research laboratory at the University of Palermo, was the founder of the Argentine Chapter of the IEEE Computational Intelligence Society, and served as its first President in 2005. She also created the scientific network PI Network in 2008, leading it until 2013.
+//       She has an extensive history as a speaker at various national and international events, having published about a hundred works related to the field of AI. Dr. López De Luise has introduced concepts like morphosyntactic wavelets, contributed to the study of robot consciousness, and proposed new propagation mechanisms in the field of automata, such as the model of bacterial consciousness. She is a member of the local Distinguished Speakers Program of IEEE Argentina and served as the President of the IEEE Argentina Steering Committee in the 2013-2014 period. She founded and directed the AI Group research laboratory at the University of Palermo, was the founder of the Argentine Chapter of the IEEE Computational Intelligence Society, and served as its first President in 2005. She also created the scientific network PI Network in 2008, leading it until 2013.
       
-      Throughout her time at ITBA (Instituto Tecnológico de Buenos Aires), she created and directed the first database laboratory in 1998, among other activities. Currently, she divides her time between her roles as a researcher, her position in IEEE Argentina Chapter, and her numerous research, development, and innovation projects related to computational intelligence. Her latest project (2019) involves the establishment of a novel architecture for islands of research, development, and innovation at the Museo Histórico Sarmiento, in collaboration with the SCA (Sociedad Científica Argentina). The goal is to create a collaborative space for researchers, companies, intermediary organizations, and educators interested in addressing STEAM (science, technology, engineering, art, and mathematics) education challenges.
+//       Throughout her time at ITBA (Instituto Tecnológico de Buenos Aires), she created and directed the first database laboratory in 1998, among other activities. Currently, she divides her time between her roles as a researcher, her position in IEEE Argentina Chapter, and her numerous research, development, and innovation projects related to computational intelligence. Her latest project (2019) involves the establishment of a novel architecture for islands of research, development, and innovation at the Museo Histórico Sarmiento, in collaboration with the SCA (Sociedad Científica Argentina). The goal is to create a collaborative space for researchers, companies, intermediary organizations, and educators interested in addressing STEAM (science, technology, engineering, art, and mathematics) education challenges.
             
-      `
-    },
-    {
-      usuario: nahuel,
-      rol: 'Científico',
-      nombre: 'Nahuel Turco',
-      profesion: 'Estudiante de Biología Molecular',
-      job:"Molecular Biology Student",
-      texto_eng:`
+//       `
+//     },
+//     {
+//       usuario: nahuel,
+//       rol: 'Científico',
+//       nombre: 'Nahuel Turco',
+//       profesion: 'Estudiante de Biología Molecular',
+//       job:"Molecular Biology Student",
+//       texto_eng:`
     
-      Nahuel Turco, an outstanding student in molecular biology, boasts the highest GPA in his field of study and is in an advanced stage of his academic journey. His sharp intelligence and problem-solving ability distinguish him as an exceptional individual in his field. In the academic world, Nahuel is recognized for his unique vision. He emphasizes that, in an increasingly complex and fascinating world, biology emerges as an essential discipline for understanding and modifying life. His commitment lies in using his skills in biology to bring scientific knowledge to society as a whole. His vision is rooted in the conviction that everyone, regardless of their socioeconomic background, should have the opportunity to benefit from the results of scientific research and the progress of science. Nahuel advocates for the importance of building bridges between the scientific community and the general public, promoting accessible outreach and providing resources that enable people to explore and understand advances in biology.
+//       Nahuel Turco, an outstanding student in molecular biology, boasts the highest GPA in his field of study and is in an advanced stage of his academic journey. His sharp intelligence and problem-solving ability distinguish him as an exceptional individual in his field. In the academic world, Nahuel is recognized for his unique vision. He emphasizes that, in an increasingly complex and fascinating world, biology emerges as an essential discipline for understanding and modifying life. His commitment lies in using his skills in biology to bring scientific knowledge to society as a whole. His vision is rooted in the conviction that everyone, regardless of their socioeconomic background, should have the opportunity to benefit from the results of scientific research and the progress of science. Nahuel advocates for the importance of building bridges between the scientific community and the general public, promoting accessible outreach and providing resources that enable people to explore and understand advances in biology.
 
-At 1mPossible, our approach is inherently interdisciplinary, guided by an unwavering commitment to achieving tangible results. We value the ability of young and talented geniuses who have the skill to solve the problems of tomorrow, transcending beyond mere academic recognition. Nahuel Turco, with his outstanding performance and sharp intelligence in biology, perfectly embodies our philosophy. His vision of bringing scientific knowledge to society and bridging the gap between the scientific community and the general public aligns perfectly with our commitment to addressing complex challenges in innovative and practical ways. At 1mPossible, we recognize and celebrate visionary talent that goes beyond conventional limits, and Nahuel is a clear example of this transformative approach.
+// At 1mPossible, our approach is inherently interdisciplinary, guided by an unwavering commitment to achieving tangible results. We value the ability of young and talented geniuses who have the skill to solve the problems of tomorrow, transcending beyond mere academic recognition. Nahuel Turco, with his outstanding performance and sharp intelligence in biology, perfectly embodies our philosophy. His vision of bringing scientific knowledge to society and bridging the gap between the scientific community and the general public aligns perfectly with our commitment to addressing complex challenges in innovative and practical ways. At 1mPossible, we recognize and celebrate visionary talent that goes beyond conventional limits, and Nahuel is a clear example of this transformative approach.
 
 
-      `,
-      texto: `
-      Nahuel Turco, un destacado estudiante de biología molecular, ostenta el más alto promedio de calificaciones en su campo de estudio y se encuentra en una etapa avanzada de su trayectoria académica. Su aguda inteligencia y capacidad para resolver problemas lo distinguen como un individuo excepcional en su campo. En el ámbito académico, Nahuel es reconocido por su visión única. Él enfatiza que, en un mundo cada vez más complejo y fascinante, la biología emerge como una disciplina esencial para comprender y modificar la vida. Su compromiso radica en utilizar sus habilidades en biología para llevar el conocimiento científico a la sociedad en su conjunto. Su visión está arraigada en la convicción de que todos, independientemente de su situación socioeconómica, deberían tener la oportunidad de beneficiarse de los resultados de la investigación científica y el progreso de la ciencia. Nahuel aboga por la importancia de construir puentes entre la comunidad científica y el público en general, promoviendo la divulgación accesible y proporcionando recursos que permitan a las personas explorar y comprender los avances en biología.
+//       `,
+//       texto: `
+//       Nahuel Turco, un destacado estudiante de biología molecular, ostenta el más alto promedio de calificaciones en su campo de estudio y se encuentra en una etapa avanzada de su trayectoria académica. Su aguda inteligencia y capacidad para resolver problemas lo distinguen como un individuo excepcional en su campo. En el ámbito académico, Nahuel es reconocido por su visión única. Él enfatiza que, en un mundo cada vez más complejo y fascinante, la biología emerge como una disciplina esencial para comprender y modificar la vida. Su compromiso radica en utilizar sus habilidades en biología para llevar el conocimiento científico a la sociedad en su conjunto. Su visión está arraigada en la convicción de que todos, independientemente de su situación socioeconómica, deberían tener la oportunidad de beneficiarse de los resultados de la investigación científica y el progreso de la ciencia. Nahuel aboga por la importancia de construir puentes entre la comunidad científica y el público en general, promoviendo la divulgación accesible y proporcionando recursos que permitan a las personas explorar y comprender los avances en biología.
 
-      En 1mPossible, nuestro enfoque es inherentemente interdisciplinario, guiado por un compromiso inquebrantable de lograr resultados tangibles. Valoramos la capacidad de jóvenes talentosos y genios que tienen la habilidad para resolver los problemas del mañana, trascendiendo más allá del mero reconocimiento académico. Nahuel Turco, con su destacado desempeño y aguda inteligencia en biología, encarna perfectamente nuestra filosofía. Su visión de llevar el conocimiento científico a la sociedad y cerrar la brecha entre la comunidad científica y el público en general se alinea perfectamente con nuestro compromiso de abordar desafíos complejos de manera innovadora y práctica. En 1mPossible, reconocemos y celebramos el talento visionario que va más allá de los límites convencionales, y Nahuel es un claro ejemplo de este enfoque transformador.
-      `,
-    },
-    {
-      usuario: samanta,
-      rol: 'Científico',
-      nombre: 'Samanta Adriana Reyes Molina',
-      profesion: 'Doctora en Ciencias Edafología',
-      job:"Ph.D. in Soil Science",
-      texto: `
-      La Doctora Samanta Reyes Molina es una apasionada investigadora que ha dedicado su vida a explorar los secretos de la biología. 
-En el año 2000 se sumergió en el fascinante mundo de la Biología, graduándose con honores en el año 2006. Este fue solo el comienzo de su viaje. Después de nutrir su curiosidad en la licenciatura, Samanta decidió llevar su conocimiento al siguiente nivel. Se aventuró en el Colegio de Postgraduados Campus Montecillo, donde se convirtió en Maestra en Ciencias Botánica entre 2008 y 2011..
-En 2016 obtiene su Doctorado en Ciencias Edafología en el mismo Colegio de Postgraduados. Con dedicación y pasión, exploró los misterios del suelo y desentrañó los secretos que este guardaba.
-Samanta se convirtió en una valiosa colaboradora en proyectos de ecología, explorando los poblados de cactáceas en el Valle de Cuatro Ciénegas, Coahuila. También se destacó como asistente de investigación, enseñando fisiología vegetal y contribuyendo a proyectos de investigación que buscaban mejorar la calidad de vida de las plantas.
-Actualmente Samanta está inmersa en una Maestría en Nutrición Deportiva en el Instituto de Estudios Superiores de Ingeniería Educativa.
-Sus intereses científicos son tan vastos como su sed de conocimiento. Desde gestión de proyectos sustentables hasta auditorías ambientales, pasando por cultivos in vitro y clasificación taxonómica de plantas, Samanta es una exploradora incansable del mundo científico. Actualmente con intereses de investigación en el area de criogenia, envejecimiento y antia-ging.
-Posee habilidades excepcionales. Es organizada, profesional, motivada y aprende con rapidez. Su compromiso con el avance científico se refleja en su participación activa en congresos y su constante búsqueda de cursos y certificaciones.
-Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el progreso científico.
+//       En 1mPossible, nuestro enfoque es inherentemente interdisciplinario, guiado por un compromiso inquebrantable de lograr resultados tangibles. Valoramos la capacidad de jóvenes talentosos y genios que tienen la habilidad para resolver los problemas del mañana, trascendiendo más allá del mero reconocimiento académico. Nahuel Turco, con su destacado desempeño y aguda inteligencia en biología, encarna perfectamente nuestra filosofía. Su visión de llevar el conocimiento científico a la sociedad y cerrar la brecha entre la comunidad científica y el público en general se alinea perfectamente con nuestro compromiso de abordar desafíos complejos de manera innovadora y práctica. En 1mPossible, reconocemos y celebramos el talento visionario que va más allá de los límites convencionales, y Nahuel es un claro ejemplo de este enfoque transformador.
+//       `,
+//     },
+//     {
+//       usuario: samanta,
+//       rol: 'Científico',
+//       nombre: 'Samanta Adriana Reyes Molina',
+//       profesion: 'Doctora en Ciencias Edafología',
+//       job:"Ph.D. in Soil Science",
+//       texto: `
+//       La Doctora Samanta Reyes Molina es una apasionada investigadora que ha dedicado su vida a explorar los secretos de la biología. 
+// En el año 2000 se sumergió en el fascinante mundo de la Biología, graduándose con honores en el año 2006. Este fue solo el comienzo de su viaje. Después de nutrir su curiosidad en la licenciatura, Samanta decidió llevar su conocimiento al siguiente nivel. Se aventuró en el Colegio de Postgraduados Campus Montecillo, donde se convirtió en Maestra en Ciencias Botánica entre 2008 y 2011..
+// En 2016 obtiene su Doctorado en Ciencias Edafología en el mismo Colegio de Postgraduados. Con dedicación y pasión, exploró los misterios del suelo y desentrañó los secretos que este guardaba.
+// Samanta se convirtió en una valiosa colaboradora en proyectos de ecología, explorando los poblados de cactáceas en el Valle de Cuatro Ciénegas, Coahuila. También se destacó como asistente de investigación, enseñando fisiología vegetal y contribuyendo a proyectos de investigación que buscaban mejorar la calidad de vida de las plantas.
+// Actualmente Samanta está inmersa en una Maestría en Nutrición Deportiva en el Instituto de Estudios Superiores de Ingeniería Educativa.
+// Sus intereses científicos son tan vastos como su sed de conocimiento. Desde gestión de proyectos sustentables hasta auditorías ambientales, pasando por cultivos in vitro y clasificación taxonómica de plantas, Samanta es una exploradora incansable del mundo científico. Actualmente con intereses de investigación en el area de criogenia, envejecimiento y antia-ging.
+// Posee habilidades excepcionales. Es organizada, profesional, motivada y aprende con rapidez. Su compromiso con el avance científico se refleja en su participación activa en congresos y su constante búsqueda de cursos y certificaciones.
+// Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el progreso científico.
 
-      `,
-      texto_eng:`
+//       `,
+//       texto_eng:`
       
-Dr. Samanta Reyes Molina is a passionate researcher who has dedicated her life to exploring the secrets of biology. In the year 2000, she immersed herself in the fascinating world of Biology, graduating with honors in 2006. This was just the beginning of her journey. After nurturing her curiosity during her undergraduate studies, Samanta decided to take her knowledge to the next level. She ventured into the College of Postgraduates Campus Montecillo, where she became a Master of Science in Botany between 2008 and 2011. In 2016, she earned her Ph.D. in Soil Science at the same College of Postgraduates. With dedication and passion, she explored the mysteries of the soil and unraveled the secrets it held.
+// Dr. Samanta Reyes Molina is a passionate researcher who has dedicated her life to exploring the secrets of biology. In the year 2000, she immersed herself in the fascinating world of Biology, graduating with honors in 2006. This was just the beginning of her journey. After nurturing her curiosity during her undergraduate studies, Samanta decided to take her knowledge to the next level. She ventured into the College of Postgraduates Campus Montecillo, where she became a Master of Science in Botany between 2008 and 2011. In 2016, she earned her Ph.D. in Soil Science at the same College of Postgraduates. With dedication and passion, she explored the mysteries of the soil and unraveled the secrets it held.
 
-Samanta became a valuable collaborator in ecology projects, exploring cactus populations in the Valle de Cuatro Ciénegas, Coahuila. She also excelled as a research assistant, teaching plant physiology and contributing to research projects aimed at improving the quality of plant life. Currently, Samanta is immersed in a Master's in Sports Nutrition at the Institute of Higher Studies in Educational Engineering. Her scientific interests are as vast as her thirst for knowledge. From sustainable project management to environmental audits, in vitro cultivation, and taxonomic classification of plants, Samanta is an tireless explorer of the scientific world. Currently, she has research interests in the areas of cryogenics, aging, and anti-aging. She possesses exceptional skills. Samanta is organized, professional, motivated, and quick to learn. Her commitment to scientific advancement is reflected in her active participation in conferences and her constant pursuit of courses and certifications. Samanta Reyes has knowledge, passion, and an unwavering commitment to scientific progress.
+// Samanta became a valuable collaborator in ecology projects, exploring cactus populations in the Valle de Cuatro Ciénegas, Coahuila. She also excelled as a research assistant, teaching plant physiology and contributing to research projects aimed at improving the quality of plant life. Currently, Samanta is immersed in a Master's in Sports Nutrition at the Institute of Higher Studies in Educational Engineering. Her scientific interests are as vast as her thirst for knowledge. From sustainable project management to environmental audits, in vitro cultivation, and taxonomic classification of plants, Samanta is an tireless explorer of the scientific world. Currently, she has research interests in the areas of cryogenics, aging, and anti-aging. She possesses exceptional skills. Samanta is organized, professional, motivated, and quick to learn. Her commitment to scientific advancement is reflected in her active participation in conferences and her constant pursuit of courses and certifications. Samanta Reyes has knowledge, passion, and an unwavering commitment to scientific progress.
 
-      `
-    },
-    {
-      usuario: seba,
-      rol: 'CEO',
-      nombre: 'Sebastián Cippitelli',
-      profesion: 'Director General de 1mPossible',
-      job:"Managing Director of 1mPossible",
-      language:clickLanguage,
-      texto: `
-      Sebastián Cippitelli, el visionario Director General de 1mPossible, cuyo viaje ha estado marcado por la creación de ideas revolucionarias para impulsar el avance científico.
+//       `
+//     },
+//     {
+//       usuario: seba,
+//       rol: 'CEO',
+//       nombre: 'Sebastián Cippitelli',
+//       profesion: 'Director General de 1mPossible',
+//       job:"Managing Director of 1mPossible",
+//       language:clickLanguage,
+//       texto: `
+//       Sebastián Cippitelli, el visionario Director General de 1mPossible, cuyo viaje ha estado marcado por la creación de ideas revolucionarias para impulsar el avance científico.
 
-      Sebastián, un políglota consumado, ha dedicado la última década a forjar ideas disruptivas que desafían los límites de la ciencia. Su travesía formal en el ámbito de la investigación y el estudio en biología y medicina ha abarcado los últimos tres años, donde ha demostrado un compromiso inquebrantable con la exploración de nuevos horizontes en estas disciplinas.
+//       Sebastián, un políglota consumado, ha dedicado la última década a forjar ideas disruptivas que desafían los límites de la ciencia. Su travesía formal en el ámbito de la investigación y el estudio en biología y medicina ha abarcado los últimos tres años, donde ha demostrado un compromiso inquebrantable con la exploración de nuevos horizontes en estas disciplinas.
       
-      Con una convicción inquebrantable, Sebastián sostiene que el éxito en cada área de desarrollo de 1mPossible se logra con el equipo adecuado de colaboradores y el respaldo financiero necesario. Su visión audaz va más allá de los límites convencionales, desafiando la percepción actual de la mortalidad.
+//       Con una convicción inquebrantable, Sebastián sostiene que el éxito en cada área de desarrollo de 1mPossible se logra con el equipo adecuado de colaboradores y el respaldo financiero necesario. Su visión audaz va más allá de los límites convencionales, desafiando la percepción actual de la mortalidad.
       
-      El plantea que la mejora de los protocolos existentes podría llevar a la criopreservación exitosa de un cuerpo y a la optimización de los tratamientos de anti-envejecimiento. Además, busca implementar tratamientos de rejuvenecimiento aún inexistentes en la actualidad. Su visión culmina en una cruzada colosal: vencer a la muerte, no solo resistir ante ella.
+//       El plantea que la mejora de los protocolos existentes podría llevar a la criopreservación exitosa de un cuerpo y a la optimización de los tratamientos de anti-envejecimiento. Además, busca implementar tratamientos de rejuvenecimiento aún inexistentes en la actualidad. Su visión culmina en una cruzada colosal: vencer a la muerte, no solo resistir ante ella.
       
-      A través de sus ideas audaces y dedicación incansable, se erige como un pionero que desafía los límites del conocimiento en pos de un futuro donde la vida no sea simplemente esclava de la muerte. 
+//       A través de sus ideas audaces y dedicación incansable, se erige como un pionero que desafía los límites del conocimiento en pos de un futuro donde la vida no sea simplemente esclava de la muerte. 
          
-      `,
-      texto_eng:`
-      Sebastián Cippitelli, the visionary Managing Director of 1mPossible, whose journey has been marked by the creation of revolutionary ideas to drive scientific advancement. Sebastián, a accomplished polyglot, has dedicated the last decade to forging disruptive ideas that challenge the limits of science. His formal journey in the realm of research and study in biology and medicine spans the past three years, where he has demonstrated an unwavering commitment to exploring new horizons in these disciplines. With unwavering conviction, Sebastián contends that success in every area of 1mPossible's development is achieved with the right team of collaborators and the necessary financial backing. His bold vision extends beyond conventional limits, challenging the current perception of mortality. He posits that improving existing protocols could lead to successful body cryopreservation and the optimization of anti-aging treatments. Furthermore, he seeks to implement rejuvenation treatments that do not yet exist today. His vision culminates in a colossal crusade: to conquer death, not merely resist it. Through his bold ideas and tireless dedication, he stands as a pioneer challenging the limits of knowledge in pursuit of a future where life is not merely a slave to death.
-      `
-    },
-    {
-      usuario: franco,
-      rol: 'Técnico',
-      nombre: 'Franco Alberti',
-      link: {link_1:'https://francoalberti1997.vercel.app/', link_2:'https://www.linkedin.com/in/franco-alberti-3248b7224/'},
-      profesion: 'Digital Business Developer',
-      job:`Digital Business Developer`,
-      texto: `
-      Desarrollador Full Stack y Emprendedor especializado en negocios digitales con amplia experiencia en la creación de plataformas digitales y estrategias de marketing online.
-      Founder de "Tu Educación Alternativa", una academia de inglés online. Ahora también, emprendiendo en la transformación digital de negocios con "Alberti Code". 
-      `,
-      texto_eng: `
-      Full Stack Developer and Entrepreneur specializing in digital business with extensive experience in creating digital platforms and online marketing strategies. Founder of "Tu Educación Alternativa," an online English academy. Also venturing into the digital transformation of businesses with "Alberti Code."
-      `,
-    },
-    {
-      usuario: dani,
-      rol: 'Técnico',
-      nombre: 'Daniel Lavagna',
-      link: "",
-      profesion: 'Diseñador Gráfico',
-      job:"Graphic Designer",
-      texto: `
-      Daniel Lavagna es un talentoso Diseñador Gráfico, fotógrafo y editor de videos. Su enfoque versátil le permite abordar diversos aspectos del diseño visual, desde la creación de identidades visuales hasta la producción de contenido multimedia atractivo. No solo es diseñador sino que también docente en un centro de formación profesional.
-      `,
-      texto_eng:`
-      Daniel Lavagna is a talented Graphic Designer, photographer, and video editor. His versatile approach allows him to tackle various aspects of visual design, from creating visual identities to producing engaging multimedia content. Not only is he a designer, but also a teacher at a professional training center.
-      `,
-    }
+//       `,
+//       texto_eng:`
+//       Sebastián Cippitelli, the visionary Managing Director of 1mPossible, whose journey has been marked by the creation of revolutionary ideas to drive scientific advancement. Sebastián, a accomplished polyglot, has dedicated the last decade to forging disruptive ideas that challenge the limits of science. His formal journey in the realm of research and study in biology and medicine spans the past three years, where he has demonstrated an unwavering commitment to exploring new horizons in these disciplines. With unwavering conviction, Sebastián contends that success in every area of 1mPossible's development is achieved with the right team of collaborators and the necessary financial backing. His bold vision extends beyond conventional limits, challenging the current perception of mortality. He posits that improving existing protocols could lead to successful body cryopreservation and the optimization of anti-aging treatments. Furthermore, he seeks to implement rejuvenation treatments that do not yet exist today. His vision culminates in a colossal crusade: to conquer death, not merely resist it. Through his bold ideas and tireless dedication, he stands as a pioneer challenging the limits of knowledge in pursuit of a future where life is not merely a slave to death.
+//       `
+//     },
+//     {
+//       usuario: franco,
+//       rol: 'Técnico',
+//       nombre: 'Franco Alberti',
+//       link: {link_1:'https://francoalberti1997.vercel.app/', link_2:'https://www.linkedin.com/in/franco-alberti-3248b7224/'},
+//       profesion: 'Digital Business Developer',
+//       job:`Digital Business Developer`,
+//       texto: `
+//       Desarrollador Full Stack y Emprendedor especializado en negocios digitales con amplia experiencia en la creación de plataformas digitales y estrategias de marketing online.
+//       Founder de "Tu Educación Alternativa", una academia de inglés online. Ahora también, emprendiendo en la transformación digital de negocios con "Alberti Code". 
+//       `,
+//       texto_eng: `
+//       Full Stack Developer and Entrepreneur specializing in digital business with extensive experience in creating digital platforms and online marketing strategies. Founder of "Tu Educación Alternativa," an online English academy. Also venturing into the digital transformation of businesses with "Alberti Code."
+//       `,
+//     },
+//     {
+//       usuario: dani,
+//       rol: 'Técnico',
+//       nombre: 'Daniel Lavagna',
+//       link: "",
+//       profesion: 'Diseñador Gráfico',
+//       job:"Graphic Designer",
+//       texto: `
+//       Daniel Lavagna es un talentoso Diseñador Gráfico, fotógrafo y editor de videos. Su enfoque versátil le permite abordar diversos aspectos del diseño visual, desde la creación de identidades visuales hasta la producción de contenido multimedia atractivo. No solo es diseñador sino que también docente en un centro de formación profesional.
+//       `,
+//       texto_eng:`
+//       Daniel Lavagna is a talented Graphic Designer, photographer, and video editor. His versatile approach allows him to tackle various aspects of visual design, from creating visual identities to producing engaging multimedia content. Not only is he a designer, but also a teacher at a professional training center.
+//       `,
+//     }
 
 
     
     
-    // You can add more objects with data here as needed
-  ];
+//     // You can add more objects with data here as needed
+//   ];
 
 
   return (
@@ -714,9 +651,9 @@ Samanta became a valuable collaborator in ecology projects, exploring cactus pop
         <Route path="/Life-extension" element={<Lifeextension clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>} />
         <Route path="/Anti-aging" element={<Aging clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>} />
         
-        {colaboradorData.map((i)=>(
+        {/* {colaboradorData.map((i)=>(
           <Route path={`/Colaborador/${i.nombre}/`} element={<ColaboradorPage  toggleLanguage={toggleLanguage} language={clickLanguage} nombre={i.nombre} imagen={i.usuario} titulo={i.profesion} titulo_eng={i.job} texto={i.texto} texto_eng={i.texto_eng} link={i.link}/>}/>    
-        ))}
+        ))} */}
 
         {place_mission.map((i)=>(
           <Route path={`/${i.link}/`} element={<ColaboradorPage toggleLanguage={toggleLanguage} language={clickLanguage} link={i.link} imagen={i.imagen} titulo={i.title} texto={i.texto_p} subtitulo={i.subtitulo}  titulo_eng={i.title_eng} texto_eng={i.texto_eng}/>}/>    

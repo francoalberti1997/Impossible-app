@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../navbar/1mPossible.png"
+import logo from "../navbar/logo-iuvenis.jpg"
 import logo_new from "../inicio/logo_nuevo.jpg"
 import { Link } from 'react-router-dom';
 
@@ -24,7 +24,7 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
         <div className="first-line">
             <div className="container-nav logo">
                 <div className="logo-imagen"><Link to="/"><img src={logo} alt="" /></Link></div>
-                {clickLanguage ? <p>Investigación líder</p> : <p>Leading research</p>}
+                <p>New Therapeutics</p>
             </div>
             <div className="container-nav info">
                 <div className="info-contacto">
@@ -38,8 +38,8 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
                             <i class="fa fa-solid fa-phone"></i>
                         </div>
                         <div className="info-phone">
-                            <p className='mail-info'>inquiries.1mpossible@gmail.com</p>
-                            <a class="number-info whats-app" href={clickLanguage ? `https://wa.me/+5491169732194?text=¡Hola! Me gustaría obtener más información.` : `"https://wa.me/+5491169732194?text=Hi! I would like to know more.`} target="" id="wsp"><p className='number-info'>+5491169732194</p></a>
+                            {/* <p className='mail-info'>inquiries.1mpossible@gmail.com</p> */}
+                            <a class="number-info whats-app" href="https://wa.me/+541136219725?text=Hi! I would like to know more." target="" id="wsp"><p className='number-info'>+541136219725</p></a>
                         </div>
                     </div>
 
